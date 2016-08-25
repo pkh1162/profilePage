@@ -1,0 +1,329 @@
+#pieBox {
+  text-align: center;
+  width: 100%;
+  margin-top: 1%;
+  background: url('http://cdn.backgroundhost.com/backgrounds/subtlepatterns/px_by_Gre3g.png') center center fixed;
+  
+}
+
+#pieRotate {
+  
+  display: inline-block;
+  transition: 1.5s ease-out; 
+  
+}
+
+.wheel {
+  background-color: white;
+  font-family: 'Titillium Web', sans-serif; 
+  font-size: 14pt;
+}
+
+#pie-upper-left {
+  border: 1px black solid;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px 0 0 0;
+  margin: auto;
+  display: inline-block;
+  position: relative;
+   transition: 0.5s;
+}
+
+#pie-upper-right {
+  border: 1px black solid;
+  width: 100px;
+  height: 100px;
+  border-radius: 0 100px 0 0;
+  margin: auto;
+  display: inline-block;
+  position: relative;
+
+}
+
+#pie-space {
+  height: 5px;
+  display: block;
+}
+
+
+#pie-lower-left {
+  border: 1px black solid;
+  width: 100px;
+  height: 100px;
+  border-radius: 0 0 0 100px;
+  margin: auto;
+  display: inline-block;
+  position: relative;
+
+}
+
+#pie-lower-right {
+  border: 1px black solid;
+  width: 100px;
+  height: 100px;
+  border-radius: 0 0 100px 0;
+  margin: auto;
+  display: inline-block;
+  position: relative;
+
+}
+
+
+#pie-upper-left p, #pie-lower-right p {
+ -webkit-transform: rotate(-45deg); 
+    -moz-transform: rotate(-45deg); 
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); //For IE support
+}
+
+
+#pie-upper-right p {
+ -webkit-transform: rotate(45deg); 
+    -moz-transform: rotate(45deg); 
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); //For IE support
+}
+
+
+#pie-lower-left p {
+ -webkit-transform: rotate(45deg); 
+    -moz-transform: rotate(45deg); 
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); //For IE support
+}
+
+
+.picked {
+  animation-name: rotate;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+ // background-color: blue;
+}
+
+.picked p{
+  animation-name: p_rotate;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  //color: white;
+}
+
+@keyframes rotate {
+ 
+  50% {
+        transform:rotate(5deg);
+        background-color: grey;
+    }
+  100% {
+        transform:rotate(0deg);
+        background-color: black;
+    }
+   
+}
+
+
+
+@keyframes p_rotate {
+ 
+  20% {
+        transform:scale();
+        color: black;
+    }
+  
+  55% {
+        transform:scale();
+        color: white;
+    }
+  100% {
+        transform:scale();
+        color: white;
+    }
+   
+}
+
+/*    ABOUT    */
+#aboutMe {
+  display: none;
+}
+
+
+#aboutMe h2 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 36pt;
+  text-decoration: underline;
+  text-decoration-style: double;
+  
+}
+
+#bio p {
+  text-align: justify;
+   font-family: 'Titillium Web', sans-serif;
+  font-size: 14pt;
+  
+}
+
+#hobbies p {
+  text-align: justify;
+   font-family: 'Titillium Web', sans-serif;
+    font-size: 14pt;
+
+}
+
+#education p {
+  text-align: justify;
+   font-family: 'Titillium Web', sans-serif;
+    font-size: 14pt;
+
+}
+
+.icons {
+  
+  border-radius: 100%;
+  display: inline-block;
+  width: 50px;
+  margin-top: 20px;
+  
+}
+
+#aboutMe h3 > i {
+  position: relative;
+  font-size: 34pt;
+}
+
+/*   END OF ABOUT     */
+
+/*  CONTACT   */
+#contactMe {
+  display: none;  
+}
+
+#contactMe h2 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 36pt;
+  text-decoration: underline;
+  text-decoration-style: double;  
+}
+
+#face {
+  width: 180px;
+  height: 180px;
+  display: inline-block;
+  border: solid black 1px;
+  margin-top: 20px;
+  
+}
+
+img {
+  border: solid 1px black;
+}
+
+#friendly {
+  text-align: justify;
+  display: block;
+  width: 500px;  
+  margin: auto;
+  margin-top: 20px;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 14pt;
+  
+}
+
+#emailPhone ul{     
+  margin-left: -45px;
+  margin-top: 15px;
+  margin-bottom: 10px; 
+}
+
+#emailPhone ul li {
+   
+  list-style: none;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 16pt;
+  background-color: black;
+  color: white;
+  width: 500px;
+  margin: auto;
+}
+
+#meIcons i {
+  font-size: 22pt;
+  color: black;
+ 
+}
+
+#meIcons button {
+  background-color: white;
+  border-radius: 100%;
+  border: 1px solid black;
+  margin: 10px;
+  margin-bottom: 50px;
+}
+
+
+
+/*  END OF CONTACT    */
+
+
+/*   PORTFOLIO   */
+
+#portfolioMe {
+  display: none;
+}
+
+#portfolioDesc {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 14pt;
+  text-align: justify;
+  margin: auto;
+  margin-bottom: 40px;
+  width: 500px;
+}
+
+#portfolioMe h2 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 36pt;
+  text-decoration: underline;
+  text-decoration-style: double;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.panel:hover {
+  box-shadow: 0 10px 15px -6px black;
+  
+
+}
+
+#portfolioMe .panel-body {
+  padding: 0px;
+}
+
+#portfolioMe .panel-heading {
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin-bottom: 1px;
+}
+
+#portfolioMe .panel-footer {
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 10px 6px -6px #777;
+}
+
+#portfolioMe a {
+  color: black;
+  font-size: 14pt;
+}
+
+.modal-footer {
+  text-align: center;  
+}
+
+.modal-footer button {
+  background-color: black;
+  color: white;
+}
+
+/*   END OF PORTFOLIO   */
+
+

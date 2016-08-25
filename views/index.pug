@@ -1,0 +1,206 @@
+doctype html
+html(lang='en')
+  head
+    title pkh1162
+    link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css', rel='stylesheet')
+    link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css', rel='stylesheet')
+    link(href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css', rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Amatic+SC|Titillium+Web', rel='stylesheet')
+    link(rel="stylesheet" type="text/css" href="/styles/index.css")
+    script(src='https://code.jquery.com/jquery-2.2.4.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js')
+    script(type='text/javascript', src='js/index.js')
+    
+  #pieBox
+    #pieRotate
+      button#pie-upper-left.wheel
+        p ABOUT
+      button#pie-upper-right.wheel
+        p PORTFOLIO
+      #pie-space
+      button#pie-lower-left.wheel
+        p CONTACT
+      button#pie-lower-right.wheel
+        p BLOG?
+  //
+    <button id="spin">
+    Spin it.
+    </button>
+    <span id="y"></span>
+  .container
+    #aboutMe
+      h2#aboutTitle.text-center  About Me
+      .row
+        #bio.col-xs-12.col-sm-4.text-center
+          .icons
+            h3
+              i.fa.fa-male(aria-hidden='true')
+          h4 Bio
+          div
+            p
+              | Hey. My name is Paul Henderson and this is my crude attempt at writing a bio. I was born and live in Glasgow, Scotland. I am currently 25 years old. My hair is curly and my eyes are brown. These things are true.
+        #hobbies.col-xs-12.col-sm-4.text-center
+          .icons
+            h3
+              i.fa.fa-book(aria-hidden='true')
+          h4 Interests
+          div
+            p
+              | I read quite often, mostly fiction but I'll have a go at anything really. I should probably lie here about organised sports but I'm not going to. I like watching football sometimes and sometimes not. I want to create something but I'm not sure what.
+        #education.col-xs-12.col-sm-4.text-center
+          .icons
+            h3
+              i.fa.fa-graduation-cap(aria-hidden='true')
+          h4 Education
+          div
+            p
+              | I have a BEng in Electronics and Electrical Engineering and an MSc in Nanoscience. I like to think about all the things I know and realise that I don't really know all that much. So I try and learn more stuff to make me feel less guilty.
+    #contactMe
+      .text-center.row
+        h2 Contact Me
+        #faceAndEmail.col-xs-12
+          #face
+            img.img-responsive(src='http://res.cloudinary.com/dxqcxsull/image/upload/v1464898059/picture005_xcr6or.jpg')
+          #friendly
+            p
+              | Profiles are hard. I included the picture above because I think I look friendly-ish in it. But maybe I don't, I'm not sure. All I know is that if you need to get in touch with me for any reason, my email and phone number are below. My github and codepen accounts are also below in case you want to snoop around.
+        #contactPlaces.col-xs-12
+          #emailPhone
+            ul
+              li  pkhenderson1162@gmail.com
+              li  07908430512
+          #meIcons
+            a(href='https://github.com/pkh1162', target='_blank')
+              button.btn.btn-primary
+                i.fa.fa-github
+            a(href='http://codepen.io/pkh1162/#', target='_blank')
+              button.btn.btn-primary.codePen
+                i.fa.fa-codepen
+            //
+              <a href="https://github.com/pkh1162" target="blank">
+              <button class="btn btn-primary"><i class="fa fa-twitter"></i></button></a>
+              <a href="https://github.com/pkh1162" target="blank">
+              <button class="btn btn-primary "><i class="fa fa-linkedin"></i></button></a>
+    #portfolioMe
+      h2 Portfolio
+      #portfolioDesc
+        | This page contains my portfolio. I created all of these on either codepen or cloud9 (hosted on heroku). These projects were all made using a combination of HTML, CSS, JS (JQuery), Node/Express and Mongodb. I have also created mini-projects using core Java, C# and SQL. The code for these projects can be seen on my 
+        a(href='https://github.com/pkh1162') gitHub page
+        | .
+      .row
+        #wiki.col-sm-3.col-xs-12
+          .panel.panel-default
+            .panel-heading Wiki-viewer
+            .panel-body(data-target='#myModal', data-toggle='modal')
+              img.img-responsive(src='http://res.cloudinary.com/dxqcxsull/image/upload/v1471624863/wiki2_bhoyak.png')
+            .panel-footer
+              a(href='http://codepen.io/pkh1162/full/wWomWx/', target='_blank')
+                i.fa.fa-arrow-circle-right(aria-hidden='true')
+        #tic-tac-toe.col-sm-3.col-xs-12
+          .panel.panel-default
+            .panel-heading Tic-tac-toe
+            .panel-body(data-target='#myModal', data-toggle='modal')
+              img.img-responsive(src='http://res.cloudinary.com/dxqcxsull/image/upload/v1471628454/tictactoe1_lw43qv.png')
+            .panel-footer
+              a(href='http://codepen.io/pkh1162/full/qNjyoG/', target='_blank')
+                i.fa.fa-arrow-circle-right(aria-hidden='true')
+        #twitch.col-sm-3.col-xs-12
+          .panel.panel-default
+            .panel-heading Twitch Center
+            .panel-body(data-target='#myModal', data-toggle='modal')
+              img.img-responsive(src='http://res.cloudinary.com/dxqcxsull/image/upload/v1471629446/twitch3_xvkczp.png')
+            .panel-footer
+              a(href='http://codepen.io/pkh1162/full/PzbWze/', target='_blank')
+                i.fa.fa-arrow-circle-right(aria-hidden='true')
+        #simon-says.col-sm-3.col-xs-12
+          .panel.panel-default
+            .panel-heading Simon Says
+            .panel-body(data-target='#myModal', data-toggle='modal')
+              img.img-responsive(src='http://res.cloudinary.com/dxqcxsull/image/upload/v1471628926/simonsays1_azfbzg.png')
+            .panel-footer
+              a(href='http://codepen.io/pkh1162/full/pbAWEz/', target='_blank')
+                i.fa.fa-arrow-circle-right(aria-hidden='true')
+      .row
+        #timestamp.col-sm-3.col-xs-12
+          .panel.panel-default
+            .panel-heading Timestamp App
+            .panel-body(data-target='#myModal', data-toggle='modal')
+              img.img-responsive(src='http://res.cloudinary.com/dxqcxsull/image/upload/v1471866573/Url_Time_Stamp_Application_tjaphh.png')
+            .panel-footer
+              a(href='https://time-stamp-pkh1162.herokuapp.com/', target='_blank')
+                i.fa.fa-arrow-circle-right(aria-hidden='true')
+        #shortener.col-sm-3.col-xs-12
+          .panel.panel-default
+            .panel-heading Url Shortener
+            .panel-body(data-target='#myModal', data-toggle='modal')
+              img.img-responsive(src='http://res.cloudinary.com/dxqcxsull/image/upload/v1471866573/Url_Shortener_Application_xbox6o.png')
+            .panel-footer
+              a(href='https://short-url-pkh1162.herokuapp.com/home', target='_blank')
+                i.fa.fa-arrow-circle-right(aria-hidden='true')
+        #image-abstraction.col-sm-3.col-xs-12
+          .panel.panel-default
+            .panel-heading Image Abstraction Layer
+            .panel-body(data-target='#myModal', data-toggle='modal')
+              img.img-responsive(src='http://res.cloudinary.com/dxqcxsull/image/upload/v1471866573/Image_Abstraction_Layer_revm3y.png')
+            .panel-footer
+              a(href='https://image-abstraction-pkh1162.herokuapp.com/', target='_blank')
+                i.fa.fa-arrow-circle-right(aria-hidden='true')
+        #file-meta.col-sm-3.col-xs-12
+          .panel.panel-default
+            .panel-heading File Meta
+            .panel-body(data-target='#myModal', data-toggle='modal')
+              img.img-responsive(src='http://res.cloudinary.com/dxqcxsull/image/upload/v1471866573/File_Meta_Application_ajxutz.png')
+            .panel-footer
+              a(href='https://filemeta-pkh1162.herokuapp.com/', target='_blank')
+                i.fa.fa-arrow-circle-right(aria-hidden='true')
+      .row
+        #calculator.col-sm-3.col-xs-12
+          .panel.panel-default
+            .panel-heading Calculator
+            .panel-body(data-target='#myModal', data-toggle='modal')
+              img.img-responsive(src='http://res.cloudinary.com/dxqcxsull/image/upload/v1471870140/CodePen_FreeCodeCamp_Calculator_dszlge.png')
+            .panel-footer
+              a(href='http://codepen.io/pkh1162/full/LkLxrY/', target='_blank')
+                i.fa.fa-arrow-circle-right(aria-hidden='true')
+        #quoteGen.col-sm-3.col-sm-12
+          .panel.panel-default
+            .panel-heading Quote Generator
+            .panel-body(data-toggle='modal', data-target='#myModal')
+              img.img-responsive(src='http://res.cloudinary.com/dxqcxsull/image/upload/v1471870140/CodePen_Quote_Generator_pduxzl.png')
+            .panel-footer
+              a(href='http://codepen.io/pkh1162/full/mEeZQV/', target='_blank')
+                i.fa.fa-arrow-circle-right(aria-hidden='true')
+        #weatherApp.col-sm-3.col-xs-12
+          .panel.panel-default
+            .panel-heading Weather App
+            .panel-body(data-toggle='modal', data-target='#myModal')
+              img.img-responsive(src='http://res.cloudinary.com/dxqcxsull/image/upload/v1471870968/weatherApp_vdhtzy.png')
+            .panel-footer
+              a(href='http://codepen.io/pkh1162/full/ezJjQr/', target='_blank')
+                i.fa.fa-arrow-circle-right(aria-hidden='true')
+        //
+          <div class="col-xs-3">
+          <div class="panel panel-default">
+          <div class="panel-heading">
+          Heading
+          </div>
+          <div class="panel-body">
+          <img class="img-responsive" src="http://res.cloudinary.com/dxqcxsull/image/upload/v1471871618/Black_Question_Mark_Clipart_Clipart_Kid_c2vo6j.png">
+          </div>
+          <div class="panel-footer">
+          Footer
+          </div>
+          </div>
+          </div>
+  // -Modals-Portfolio----------
+  #myModal.modal.fade(role='dialog')
+    .modal-dialog
+      // Modal content
+      .modal-content
+        .modal-header
+        .modal-body
+        .modal-footer
+          //
+            ---
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+  // End of portfolio modals---
