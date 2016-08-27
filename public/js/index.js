@@ -11,7 +11,7 @@ var rotateTitleBy = 0;
 
 //$("#pieBox").hide();
 
-jQuery("#pie-upper-left").on("click", function(){
+$("#pie-upper-left").on("click", function(){
   rotate("about" ,this.id, -30, -30);
   // n += 90;
  // $(this).css("transform", "rotate(" + n + "deg)");
@@ -104,6 +104,7 @@ function rotate(pick, sectionToRotate, x, y) {
   else if (pick == "blog"){
     addActive(block);
     rotateBy(225, 135);
+    $("#blogMe").fadeIn("slow");
   }
   else{
     rotateBy(0, 0);
@@ -168,6 +169,7 @@ function fadeOuts() {
   $("#aboutMe").fadeOut("fast");
    $("#contactMe").fadeOut("fast");
   $("#portfolioMe").fadeOut("fast");
+  $("#blogMe").fadeOut("fast");
 }
 
 

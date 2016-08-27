@@ -191,6 +191,26 @@
 
 /*   END OF ABOUT     */
 
+
+/* BLOG/////////////*/
+
+#blogMe {
+  display: none;
+}
+
+#blogMe h2 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 32pt;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-style: double;
+}
+
+
+
+/*END OF BLOG      */
+
+
 /*  CONTACT   */
 #contactMe {
   display: none;  
