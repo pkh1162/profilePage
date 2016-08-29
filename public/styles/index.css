@@ -19,6 +19,10 @@
   font-size: 14pt;
 }
 
+.wheel:focus {
+  outline: none;
+}
+
 #pie-upper-left {
   border: 1px black solid;
   width: 100px;
