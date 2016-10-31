@@ -79,7 +79,7 @@ var q0Ans = $spriteAnswer.text();
 
 var q1Ans = "Your will be done. Just drag me into the middle of the screen to get going.";
 
-var q2Ans = "The floating fragments you see to the right are what will be used to construct the Creator's profile. They are my siblings, and I am honoured that the Creator destined me to be the final piece. At least, that is the conceit. In reality, I exist because the Creator got a bit carried away with designing the animation to your right. Anyway, just place me in the center of the screen to get to the profile.";
+var q2Ans = "The floating fragments you see to the right are what will be used to construct the Creator's profile. They are my siblings, and I am honoured that the Creator destined me to be the final piece. At least, that is the conceit. In reality, I exist because the Creator got a bit carried away while designing the animation to your right. Anyway, just place me in the center of the screen to get to the profile.";
 
 var q3Ans = "That is quite an unfortunate affair. They had to be disposed of due to, what the Great Creator would describe as, excessive creepiness. Google Zelda moon for some kind of idea of what they looked like. I am proud to say that I am the least creepy design which the Creator had time to make. To get to the profile, place me in the center of the abstract mess to my right.";
 
