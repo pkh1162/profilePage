@@ -564,7 +564,7 @@ $("#twitch").on("click", function(){
 
 $("#simon-says").on("click", function(){
   var title = "Zelda Says";
-  var image = "https://res.cloudinary.com/dxqcxsull/image/upload/c_scale,h_616,w_1349/v1476650922/httpss_zelda_says.herokuapp.com_akqkrs.png";
+  var image = "https://res.cloudinary.com/dxqcxsull/image/upload/v1476650922/https_zelda_says.herokuapp.com_akqkrs.png";
   var description = "Zelda inspired Simon Says game. Made using HTML, CSS and JQuery.";
   
   initModal(title, image, description);
