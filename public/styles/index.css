@@ -1,16 +1,63 @@
-#pieBox {
-  text-align: center;
-  width: 100%;
-  margin-top: 1%;
-  background: url('http://cdn.backgroundhost.com/backgrounds/subtlepatterns/px_by_Gre3g.png') center center fixed;
+@media screen and (max-width: 500px) {
+    
+  
+  #portfolioDesc, #friendly, #emailPhone ul li {
+    width: 100% !important;   
+}
+}
+
+
+::-webkit-scrollbar { 
+  background: transparent;
+  border-radius:  100%;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 5px;
+    border-radius: 30%;
+    background: #970000;
+}
+
+
+::-webkit-scrollbar-track {
+   
+    border: 1px solid white;
+   border-radius: 10%;
+    background-color: white;
+}
+
+::-webkit-scrollbar-button {
+  height:10px;
+  width: 20px;
+  background: transparent;
+  border-radius: 100%;
+}
+
+
+
+body {
+  background-color: black;
+  overflow: hidden;
   
 }
 
+/**/
+
+.spritePic {
+  width: 20pt;
+  border: none;
+  vertical-align: baseline;
+  bacground-color: transparent;
+}
+
+
 #pieRotate {
-  
   display: inline-block;
   transition: 1.5s ease-out; 
-  
+  opacity:0;
+  max-height: 220px;
+  max-width: 100%;
 }
 
 .wheel {
@@ -19,9 +66,7 @@
   font-size: 14pt;
 }
 
-.wheel:focus {
-  outline: none;
-}
+.wheel:focus {outline:0;}
 
 #pie-upper-left {
   border: 1px black solid;
@@ -95,6 +140,7 @@
 }
 
 
+
 .picked {
   animation-name: rotate;
   animation-duration: 1.5s;
@@ -119,7 +165,7 @@
     }
   100% {
         transform:rotate(0deg);
-        background-color: black;
+        background-color: #BD0900;
     }
    
 }
@@ -144,9 +190,284 @@
    
 }
 
+
+
+/**/
+
+
+.text {
+  vertical-align: bottom;
+  font-family: 'Titillium Web', sans-serif;
+  display: block;
+  background-color:black;
+  max-height: 250px;
+  max-width: 260px;
+  bottom: 18%;
+  position: absolute;
+  border: 1px solid white;
+  border-radius: 5%;
+  color: red;
+  font-size: 16pt;
+  text-align: center;
+  padding: 20px;
+  overflow:auto;
+  z-index:10000;
+  
+  
+}
+
+.text label {
+  font-size: 12pt;
+  color: black;
+  background-color: white;
+  width: 100%;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5%;
+}
+
+.tooltip {
+  width: 200px;
+  z-index: 999999;
+}
+
+
+.spriteOptions {
+  margin-top: 25px;
+}
+
+.spriteText {
+  margin-bottom: 10px;
+  opacity: 1;
+}
+
+.goBack {
+  display: none;
+  margin: 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  width: 90%;
+}
+
+.triangle {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 30px;
+  bottom: 10%;
+  border: 15px solid;
+  border-color: white transparent transparent white;
+  
+}
+
+
+
+
+
+
+svg {  
+  top: 0;
+  left: 40%;
+  opacity: 1;
+  z-index: 0;
+  position: absolute;
+  
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  
+}
+
+#pieBox {
+  display: none;
+  text-align: center;
+  width 100%;
+  margin-top: 1%;
+  border: 1px solid ;
+  height: 207px;
+   background: url('http://cdn.backgroundhost.com/backgrounds/subtlepatterns/px_by_Gre3g.png') center center fixed;
+  position: relative;
+  opacity: 0;
+  
+}
+
+
+svg path {
+  fill: white;
+}
+.sprite path {
+  fill: red; 
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  
+}
+
+
+
+.footer {
+  position: relative;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+ 
+}
+
+.circleSVG {
+  display: none;
+}
+
+.sprite {
+  position: absolute;
+  top:90%;
+  left:3%; 
+  transform: scale(1);
+}
+
+.set1, .set2 {
+  opacity: 0;
+  position: absolute;
+  transform: scale(1);
+}
+
+.svgBlack path {
+  fill:black;
+}
+
+.svgWhite path{
+  fill:white;
+}
+
+.svgGrey path{
+  fill:grey;
+}
+
+
+
+.boxHeight {
+  top: 100px;
+  position: absolute;
+}
+
+.spritePos {
+  top: 150px;
+  position: absolute;
+}
+
+
+
+
+.sphere {
+  width: 207px;
+  height: 207px;
+  position: absolute;
+  left:50%;
+  top:50%;
+  border-radius: 100%;
+  margin-left:-103.5px;
+  margin-top:-103.5px;
+  border: black solid 1px;
+  
+  background: url("http://res.cloudinary.com/dxqcxsull/image/upload/v1474648446/group_vp8veq.jpg") center center repeat;
+  
+  transform: scale(0);
+}
+
+.svgContainer {
+  margin-top: 100px;
+  position:;
+  height: 350px;    
+  
+  min-width: 105px;
+}
+    
+.col-xs-10 {
+ 
+  width: 100%;
+  height: 350px;
+  
+  
+}
+
+.col-sm-4 {
+   
+   height: 350px;
+  
+  
+}
+
+
+
+
+
+.s1, .s2, .s3, .s4, .s5 {
+  position: absolute;
+  
+  
+  
+  
+}
+
+
+.s6, .s7, .s8, .s9, .s10 {
+  position: absolute;
+  top: -100px;  
+}
+
+
+button .blob {
+  position: absolute;
+  top: 300px;
+  z-index: 40;
+}
+
+.footer {
+  height: 100px;
+  
+  position: relative;
+}
+
+/*centerSprite*/
+
+#spriteMe {
+  display: none;
+  position: relative;
+  margin-top: 250px;
+}
+
+
+#centerDiv {
+  position: relative;
+  width: 100%;
+  height: 300px; ;
+  text-align: center;
+}
+
+.centerSprite {
+  position: relative;
+  left: 5px;;
+  transform: scale(3);
+  top:100px;
+}
+
+.centerSprite path {
+  fill: red;
+}
+
+/**/
+
 /*    ABOUT    */
 #aboutMe {
   display: none;
+  position: relative;
+  margin-top: 250px;
 }
 
 
@@ -154,14 +475,14 @@
   font-family: 'Amatic SC', cursive;
   font-size: 36pt;
   text-decoration: underline;
-  text-decoration-style: double;
-  
+  text-decoration-style: double;  
 }
 
 #bio p {
   text-align: justify;
-   font-family: 'Titillium Web', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   font-size: 14pt;
+  opacity:1; 
   
 }
 
@@ -196,28 +517,9 @@
 /*   END OF ABOUT     */
 
 
-/* BLOG/////////////*/
-
-#blogMe {
-  display: none;
-}
-
-#blogMe h2 {
-  font-family: 'Amatic SC', cursive;
-  font-size: 32pt;
-  text-align: center;
-  text-decoration: underline;
-  text-decoration-style: double;
-}
-
-
-
-/*END OF BLOG      */
-
-
-/*  CONTACT   */
 #contactMe {
-  display: none;  
+  display: none;
+  margin-top: 240px;
 }
 
 #contactMe h2 {
@@ -264,7 +566,7 @@ img {
   font-size: 16pt;
   background-color: black;
   color: white;
-  width: 500px;
+  width: 350px;
   margin: auto;
 }
 
@@ -282,15 +584,41 @@ img {
   margin-bottom: 50px;
 }
 
-
+#meIcons button.codePen {
+  background-color: ;
+}
 
 /*  END OF CONTACT    */
+
+
+/*Blog//////////////////////*/
+#blogMe {
+  display: none;
+  margin-top: 240px;
+}
+
+#blogMe h2 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 32pt;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-style: double;
+}
+
+/*//End of Blog/////////////*/
+
+
+
+
+
 
 
 /*   PORTFOLIO   */
 
 #portfolioMe {
   display: none;
+  margin-top: 250px;
+
 }
 
 #portfolioDesc {
@@ -313,8 +641,6 @@ img {
 
 .panel:hover {
   box-shadow: 0 10px 15px -6px black;
-  
-
 }
 
 #portfolioMe .panel-body {
@@ -339,15 +665,30 @@ img {
   font-size: 14pt;
 }
 
+.modal-dialog {
+  width: 90%;
+  height: 90%;
+}
+
 .modal-footer {
   text-align: center;  
+}
+
+.modal-footer p {
+ padding: 10px;
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
 }
 
 .modal-footer button {
   background-color: black;
   color: white;
+  width: 100%;
 }
 
+
 /*   END OF PORTFOLIO   */
+
 
 
