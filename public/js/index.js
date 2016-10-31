@@ -539,7 +539,7 @@ function fadeOuts() {
 //Row 1
 $("#wiki").on("click", function(){
   var title = "Wiki Viewer";
-  var image ="http://res.cloudinary.com/dxqcxsull/image/upload/v1471624863/wiki2_bhoyak.png";
+  var image ="https://res.cloudinary.com/dxqcxsull/image/upload/v1471624863/wiki2_bhoyak.png";
   var description = "Search application which uses the wikipedia search api. Made using HTML, CSS and JQuery.";
   
   initModal(title, image, description);
@@ -547,7 +547,7 @@ $("#wiki").on("click", function(){
 
 $("#tic-tac-toe").on("click", function(){
   var title = "tic-tac-toe";
-  var image = "http://res.cloudinary.com/dxqcxsull/image/upload/v1471628454/tictactoe1_lw43qv.png";
+  var image = "https://res.cloudinary.com/dxqcxsull/image/upload/v1471628454/tictactoe1_lw43qv.png";
   var description = "Simple game of tic-tac-toe. Made using HTML, CSS and JQuery.";
   
   initModal(title, image, description);
@@ -556,7 +556,7 @@ $("#tic-tac-toe").on("click", function(){
 
 $("#twitch").on("click", function(){
   var title = "Twitch Center";
-  var image = "http://res.cloudinary.com/dxqcxsull/image/upload/v1471629446/twitch3_xvkczp.png";
+  var image = "https://res.cloudinary.com/dxqcxsull/image/upload/v1471629446/twitch3_xvkczp.png";
   var description = "Center for chosen twitch tv streams. Made using HTML, CSS and JQuery. Embedded videos do not work on Edge.";
   
   initModal(title, image, description);    
@@ -564,7 +564,7 @@ $("#twitch").on("click", function(){
 
 $("#simon-says").on("click", function(){
   var title = "Zelda Says";
-  var image = "http://res.cloudinary.com/dxqcxsull/image/upload/c_scale,h_616,w_1349/v1476650922/https_zelda_says.herokuapp.com_akqkrs.png";
+  var image = "https://res.cloudinary.com/dxqcxsull/image/upload/c_scale,h_616,w_1349/v1476650922/httpss_zelda_says.herokuapp.com_akqkrs.png";
   var description = "Zelda inspired Simon Says game. Made using HTML, CSS and JQuery.";
   
   initModal(title, image, description);
@@ -576,7 +576,7 @@ $("#simon-says").on("click", function(){
 
 $("#timestamp").on("click", function(){
  var title = "Twitch Center";
-  var image = "http://res.cloudinary.com/dxqcxsull/image/upload/v1471866573/Url_Time_Stamp_Application_tjaphh.png";
+  var image = "https://res.cloudinary.com/dxqcxsull/image/upload/v1471866573/Url_Time_Stamp_Application_tjaphh.png";
   var description = "Simple unix timestamp application. Made using HTML, CSS and Node/Express.";
   
   initModal(title, image, description);
@@ -584,7 +584,7 @@ $("#timestamp").on("click", function(){
 
 $("#shortener").on("click", function(){
   var title = "Url Shortener";
-  var image = "http://res.cloudinary.com/dxqcxsull/image/upload/v1471866573/Url_Shortener_Application_xbox6o.png";
+  var image = "https://res.cloudinary.com/dxqcxsull/image/upload/v1471866573/Url_Shortener_Application_xbox6o.png";
   var description = "Url shortening application. Made using HTML, CSS, Node/Express and Mongodb.";
   
   initModal(title, image, description);
@@ -592,7 +592,7 @@ $("#shortener").on("click", function(){
 
 $("#image-abstraction").on("click", function(){
   var title = "Image Abstraction Layer";
-  var image = "http://res.cloudinary.com/dxqcxsull/image/upload/v1471866573/Image_Abstraction_Layer_revm3y.png";
+  var image = "https://res.cloudinary.com/dxqcxsull/image/upload/v1471866573/Image_Abstraction_Layer_revm3y.png";
   var description = "Image search application. Made using HTML, CSS, Node/Express and Mongodb.";
   
   initModal(title, image, description);
@@ -600,7 +600,7 @@ $("#image-abstraction").on("click", function(){
 
 $("#voting-app").on("click", function(){
   var title = "Voting Application";
-  var image = "http://res.cloudinary.com/dxqcxsull/image/upload/v1477908826/Public_Poll_dhzeb4.png";
+  var image = "https://res.cloudinary.com/dxqcxsull/image/upload/v1477908826/Public_Poll_dhzeb4.png";
   var description = "Voting application. Created using HTML, CSS, Node/Express, Clementine.js and Mongoose";
   
   initModal(title, image, description);
@@ -612,7 +612,7 @@ $("#voting-app").on("click", function(){
 
 $("#calculator").on("click", function(){
   var title = "Simple Calculator";
-  var image = "http://res.cloudinary.com/dxqcxsull/image/upload/c_scale,h_606,w_1349/v1476652795/CodePen_FreeCodeCamp_Calculator_saokls.png";
+  var image = "https://res.cloudinary.com/dxqcxsull/image/upload/c_scale,h_606,w_1349/v1476652795/CodePen_FreeCodeCamp_Calculator_saokls.png";
   var description = "Simple calculator. Made using HTML, CSS and JQuery.";
   
   initModal(title, image, description);
@@ -620,7 +620,7 @@ $("#calculator").on("click", function(){
 
 $("#quoteGen").on("click", function(){
   var title = "Random Quote Generator";
-  var image = "http://res.cloudinary.com/dxqcxsull/image/upload/v1471870140/CodePen_Quote_Generator_pduxzl.png";
+  var image = "https://res.cloudinary.com/dxqcxsull/image/upload/v1471870140/CodePen_Quote_Generator_pduxzl.png";
   var description = "Simple quote generator with tweeting functionality. Made using HTML, CSS and JQuery.";
   
   initModal(title, image, description);
@@ -628,7 +628,7 @@ $("#quoteGen").on("click", function(){
 
 $("#weatherApp").on("click", function(){
  var title = "Weather Application";
-  var image = "http://res.cloudinary.com/dxqcxsull/image/upload/v1471870968/weatherApp_vdhtzy.png";
+  var image = "https://res.cloudinary.com/dxqcxsull/image/upload/v1471870968/weatherApp_vdhtzy.png";
   var description = "Weather Application. Made using HTML, CSS and Jquery.";
   
   initModal(title, image, description);
