@@ -31,7 +31,7 @@ var spriteOffset;
 //Function to update dimensions before animation///////
 
 var update = function(){
-console.log("two two");
+
 boxH = $box.height();
 boxW = $box.width();
 boxOffset = $box.offset();  
@@ -121,7 +121,7 @@ update();
 
   
   
-  if ($(window).width() < 600){
+  if ($(window).width() < 758){
     console.log("the width is: " + $(window).width());
    // $("*").css("backgroundColor", "red");
     
@@ -340,7 +340,7 @@ var rotateTitleBy = 0;
 //$("#pieBox").hide();
 
 $("#pie-upper-left").on("click", function(){
-  rotate("about" ,this.id, -30, -30);
+  rotate("about" , this.id, -30, -30);
   // n += 90;
  // $(this).css("transform", "rotate(" + n + "deg)");
  // console.log(this.id);
@@ -349,7 +349,6 @@ $("#pie-upper-left").on("click", function(){
 
 $("#pie-upper-right").on("click", function(){
  rotate("portfolio" ,this.id, 30, -30);
-  
 }); 
 
 $("#pie-lower-left").on("click", function(){
@@ -421,13 +420,21 @@ function contactMeEffects (){
 function portfolioMeEffects (){
   TweenMax.from("#portfolioMe h2", 3, {opacity:0, delay:1.2});
   TweenMax.from("#portfolioMe #portfolioDesc", 3, {opacity:0, y:200});
-TweenMax.staggerFrom("#portfolioMe .row>div", 3, {opacity:0, y:200}, 0.3);
+  TweenMax.staggerFrom("#portfolioMe .row>div", 3, {opacity:0, y:200}, 0.1);
 
 }    
 
 
 
 function rotate(pick, sectionToRotate, x, y) {
+  
+  $("button").prop("disabled",true);
+ 
+ setTimeout(function(){
+ $("button").prop("disabled",false);
+   
+ }, 3000)
+ 
   removeActive();  
   fadeOuts();
   
@@ -582,10 +589,10 @@ $("#timestamp").on("click", function(){
   initModal(title, image, description);
 })
 
-$("#shortener").on("click", function(){
-  var title = "Url Shortener";
-  var image = "https://res.cloudinary.com/dxqcxsull/image/upload/v1471866573/Url_Shortener_Application_xbox6o.png";
-  var description = "Url shortening application. Made using HTML, CSS, Node/Express and Mongodb.";
+$("#bubbles").on("click", function(){
+  var title = "D3 Bubble Chart App";
+  var image = "http://res.cloudinary.com/dxqcxsull/image/upload/v1489419195/screenshot-pkh1162.github.io-2017-03-13-15-31-09_gixba7.png";
+  var description = "Application which allows you to view and sort through user coding projects using bubble charts. Created with React/Redux, d3, Express and Mongoose ";
   
   initModal(title, image, description);
 })
