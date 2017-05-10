@@ -597,10 +597,10 @@ $("#bubbles").on("click", function(){
   initModal(title, image, description);
 })
 
-$("#image-abstraction").on("click", function(){
-  var title = "Image Abstraction Layer";
-  var image = "https://res.cloudinary.com/dxqcxsull/image/upload/v1471866573/Image_Abstraction_Layer_revm3y.png";
-  var description = "Image search application. Made using HTML, CSS, Node/Express and Mongodb.";
+$("#tv-show-app").on("click", function(){
+  var title = "TV Watchlist Application";
+  var image = "https://res.cloudinary.com/dxqcxsull/image/upload/v1494426812/tv_app_whole_page_dtevew.png";
+  var description = "TV watchlist application. Made using HTML, CSS, Vue/Vuex/VueRouter and firebase.";
   
   initModal(title, image, description);
 })
