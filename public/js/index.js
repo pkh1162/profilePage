@@ -221,8 +221,8 @@ function replaceSpriteText (spriteChoice, empty){
     t2
       .staggerTo(".set1", 1, {opacity:1, scale: 0,x:0,delay:1, y:svg1YMove, timescale:2, ease:Power4.easeOut} , 0, 0)
       .staggerTo(".set2", 1, {opacity:1, scale: 0, x:0,delay:1, y:svg2YMove, timescale:2}, 0, 0)
-      .to(".sphere", 3, {borderRadius: 100, scale:1, opacity:1, rotation: "360deg", zIndex:1000},1)
-      .to(".sphere", 5, {y:-165, opacity:0}, 4.5)
+      .to(".sphere", 1, {borderRadius: 100, scale:1, opacity:1, rotation: "360deg", zIndex:1000},1)
+      .to(".sphere", 5, {y:-165, opacity:0}, 3.5)
       .to("body", 5, {"backgroundColor": "white"}, 6)
       .to("#pieBox", 1, {"display": "block", "position":"absolute", opacity:1, onComplete:function(){
        $(".wheel").prop("disabled", "true");
@@ -601,6 +601,15 @@ $("#tv-show-app").on("click", function(){
   var title = "TV Watchlist Application";
   var image = "https://res.cloudinary.com/dxqcxsull/image/upload/v1494426812/tv_app_whole_page_dtevew.png";
   var description = "TV watchlist application. Made using HTML, CSS, Vue/Vuex/VueRouter and firebase.";
+  
+  initModal(title, image, description);
+})
+
+
+$("#design-monks").on("click", function(){
+  var title = "Dribble Inspired Application";
+  var image = "https://res.cloudinary.com/dxqcxsull/image/upload/v1495404568/design_monks_whole_page_pf2cff.png";
+  var description = "Dribble inspired application. Made using HTML, CSS and React.";
   
   initModal(title, image, description);
 })

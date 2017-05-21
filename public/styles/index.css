@@ -572,7 +572,7 @@ img {
 }
 
 #meIcons i {
-  font-size: 22pt;
+  font-size: 32pt;
   color: black;
  
 }
@@ -677,14 +677,15 @@ img {
 
 .modal-footer p:first-child {
   text-align: center;
+  font-size: 28pt;
   margin: 0 auto;
   width: 80%;
-  font-size: 16px;
-  border: 1px solid black;
-  background-color: #970000;
+    /* border: 1px solid black; */
+  background-color: transparent;
   text-align: center;
-  color: white;
-  padding: 15px;
+  color: black;
+  padding: 30px;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 .modal-footer button {
@@ -694,15 +695,15 @@ img {
 }
 
 .modal-open .modal {
-  width : 90%;
+  width : 100%;
   height : 90vh;
   position : fixed;
   margin : auto;
 }
 
 .modal-dialog {
-  width : 98%;
-  margin: 0px;
+  width : 80%;
+  margin-left: 10%;
   padding: 0px;
 }
 
