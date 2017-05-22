@@ -164,6 +164,7 @@ $(".text").on("click", function(event){
     if(canDrag==false){
       dragNow();  
     }
+  
     
     
     $(".goBack").show();
@@ -193,15 +194,21 @@ function replaceSpriteText (spriteChoice, empty){
     case "q0" : 
       $spriteAnswer.text(q0Ans);
       break;
-    case "q1" : 
+    case "q1 question" : 
       $spriteAnswer.text(q1Ans);
       break;     
-    case "q2" :   
+    case "q2 question" :   
       $spriteAnswer.text(q2Ans);
       break;
-    case "q3" : 
+    case "q3 question" : 
       $spriteAnswer.text(q3Ans);
       break;
+    default : 
+      console.log("default case")
+      $spriteOptions.show();
+       $(".goBack").hide();
+      //$spriteAnswer.text(q0Ans);
+    
     
   }
 }
@@ -607,9 +614,9 @@ $("#tv-show-app").on("click", function(){
 
 
 $("#design-monks").on("click", function(){
-  var title = "Dribble Inspired Application";
+  var title = "Dribble Inspired Prototype";
   var image = "https://res.cloudinary.com/dxqcxsull/image/upload/v1495404568/design_monks_whole_page_pf2cff.png";
-  var description = "Dribble inspired application. Made using HTML, CSS and React.";
+  var description = "Dribble inspired prototype. Made using HTML, CSS and React.";
   
   initModal(title, image, description);
 })

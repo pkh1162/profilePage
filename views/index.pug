@@ -108,7 +108,7 @@ script(type='text/javascript', src='js/index.js')
   #portfolioMe
     h2 Portfolio
     #portfolioDesc
-      | This page contains my portfolio. I created all of these projects on either codepen or cloud9 (hosted on heroku). These projects were all made using a combination of HTML, CSS, JavaScript (& JQuery), Node/Express and Mongodb. I have also created mini-projects using technologies such as Java, C# and SQL. The code for all of these projects can be seen on either my 
+      | This page contains my portfolio. I created all of these projects using a combination of HTML, CSS, JavaScript, Jquery, React/Redux, Vue/Vuex, Node/Express and Mongodb. I have also created mini-projects using technologies such as Java, C# and SQL. The code for each of these applications can be seen on either my 
       a(href='https://github.com/pkh1162') gitHub
       |   or 
       a(href='https://codepen.io/pkh1162/#', target='_blank') codepen
@@ -131,7 +131,7 @@ script(type='text/javascript', src='js/index.js')
       #design-monks.col-sm-3.col-xs-12
         .panel.panel-default
           .panel-heading
-            | Dribble Inspired Application
+            | Dribble Inspired Prototype
           .panel-body(data-target='#myModal', data-toggle='modal')
             img.img-responsive(src='https://res.cloudinary.com/dxqcxsull/image/upload/c_scale,h_612,w_1324/v1495404967/design_monks_whole_page_pf2cff.png')
           .panel-footer
@@ -197,15 +197,6 @@ script(type='text/javascript', src='js/index.js')
             a.pull-left(data-toggle='tooltip', title="Polygon art supported only on Chrome at the moment. Working test page for Firefox can be seen on the Creator's codepen.")
               img.spritePic.responsive(src='https://res.cloudinary.com/dxqcxsull/image/upload/v1474996631/spriteNo9_agzrze.png')  
     .row
-      #calculator.col-sm-3.col-xs-12
-        .panel.panel-default
-          .panel-heading
-            | Calculator
-          .panel-body(data-target='#myModal', data-toggle='modal')
-            img.img-responsive(src='https://res.cloudinary.com/dxqcxsull/image/upload/c_scale,h_606,w_1349/v1476652795/CodePen_FreeCodeCamp_Calculator_saokls.png')
-          .panel-footer
-            a(href='https://codepen.io/pkh1162/full/LkLxrY/', target='_blank')
-              i.fa.fa-arrow-circle-right(aria-hidden='true')
       #quoteGen.col-sm-3.col-sm-12
         .panel.panel-default
           .panel-heading
@@ -217,6 +208,16 @@ script(type='text/javascript', src='js/index.js')
               i.fa.fa-arrow-circle-right(aria-hidden='true')
             a.pull-left(data-toggle='tooltip', title='This was one of the first applications the Creator made. He felt he should leave it as it is to give some sense of progression. Personally, I think that everything the Creator does is timeless.')
               img.spritePic.responsive(src='https://res.cloudinary.com/dxqcxsull/image/upload/v1474996631/spriteNo9_agzrze.png')
+      #calculator.col-sm-3.col-xs-12
+        .panel.panel-default
+          .panel-heading
+            | Calculator
+          .panel-body(data-target='#myModal', data-toggle='modal')
+            img.img-responsive(src='https://res.cloudinary.com/dxqcxsull/image/upload/c_scale,h_606,w_1349/v1476652795/CodePen_FreeCodeCamp_Calculator_saokls.png')
+          .panel-footer
+            a(href='https://codepen.io/pkh1162/full/LkLxrY/', target='_blank')
+              i.fa.fa-arrow-circle-right(aria-hidden='true')  
+      
       //
         #weatherApp.col-sm-3.col-xs-12
           .panel.panel-default
@@ -244,11 +245,11 @@ script(type='text/javascript', src='js/index.js')
   .row.introRow
     .col-sm-4.hidden-xs.data
       .text
-        p.spriteText "Hello, my name is Sprite No. 9. I will be your guide today."
+        p.spriteText Hello, my name is Sprite No. 9. I will be your guide today.
         .spriteOptions
-          label.q1 I don't have time for this, just take me to the profile
-          label.q2 What is going on right now?
-          label.q3 Wait, what happened to the other eight?
+          label.q1.question I don't have time for this, just take me to the profile
+          label.q2.question What is going on right now?
+          label.q3.question Wait, what happened to the other eight?
         button.goBack
           span.goBack.glyphicon.glyphicon-chevron-left(aria-hidden='true')
       .triangle
